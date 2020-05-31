@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2rem;
+  margin: 10px 0px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  color: #28a745;
+  border-bottom: #28a745 2px solid;
+}
+
+.logo {
+  font-weight: 400;
+}
+
+/* Hero */
+
+.hero {
+  background: url("../img/home/showcase.jpg") center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .content {
+  color: #fff;
+  text-align: center;
+}
+
+.hero .content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.solutions {
+  display: flex;
+  height: 300px;
+}
+
+.box i {
+  border-radius: 50%;
+  padding: 1rem;
+  color: #fff;
+}

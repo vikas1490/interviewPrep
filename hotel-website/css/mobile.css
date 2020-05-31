@@ -1,0 +1,27 @@
+.container {
+  padding: 0px;
+}
+
+#navbar .logo {
+  float: none;
+  text-align: center;
+}
+
+#navbar ul {
+  float: none;
+}
+
+#navbar ul li {
+  float: none;
+}
+
+.home-info .info-img {
+  display: none;
+}
+
+.home-info .info-content {
+  float: none;
+  padding: 50px 30px;
+  width: 100%;
+  text-align: center;
+}
