@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #344a72;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 80%;
+  margin: 50px auto;
+}
+.form-wrap {
+  position: relative;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor {
+  min-width: 80%;
+  min-height: 200px;
+  border: 3px dashed #ccc;
+}
+
+.form-wrap h1,
+p {
+  text-align: center;
+}
+
+#root {
+  margin-bottom: 15px;
+}
+
+#editor .row h4 {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 35px 10px 0px 10px;
+  width: 100%;
+}
+
+.toolbar {
+  display: flex;
+}
+
+.form-group {
+  margin: 10px 10px;
+}
+
+.actions {
+  display: flex;
+}
+.label {
+  width: 100%;
+  display: block;
+  color: #666;
+}
+
+.input,
+select {
+  width: 100%;
+  padding: 15px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.btn {
+  width: 100%;
+  margin: 10px 5px;
+  padding: 10px;
+  border: none;
+
+  border-radius: 5px;
+  font-size: 17px;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+
+.btn-green {
+  background: #49c1a2;
+}
+.btn-red {
+  background: #d9534f;
+}
+.btn-orange {
+  background: #d96704;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+#rulesView {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  flex: 1;
+  text-align: center;
+}
+
+#rulesView .row {
+  border-bottom: 1px solid #ccc;
+}
+#rulesView .row .col {
+  padding: 10px;
+}
+
+#rulesView .row .col:first-child {
+  border-right: 1px solid #ccc;
+}
+
+#rulesView .row .col:last-child {
+  display: flex;
+}
+
+#editor .col:first-child {
+  flex-basis: 75%;
+  display: flex;
+}
+
+#editor .col:first-child .form-group {
+  width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+  #editor .col:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  #editor .col:first-child .form-group {
+    width: 100%;
+  }
+}
